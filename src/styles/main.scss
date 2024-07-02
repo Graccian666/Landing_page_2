@@ -1,0 +1,55 @@
+@use 'hero';
+@use './components/infobar.scss';
+@use 'content';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+.btn{
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #4F2AC3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    border-radius: 15px;
+    white-space: nowrap;
+
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($color: #4F2AC3, $amount: 4);
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+    }
+
+}

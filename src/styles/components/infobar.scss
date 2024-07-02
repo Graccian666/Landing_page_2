@@ -1,0 +1,45 @@
+.info-bar{
+    padding: 16px 24px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    &__list{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+
+            b{
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__list{
+            gap: 24px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__list{
+            display: block;
+            text-align: center;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+
+
+}
