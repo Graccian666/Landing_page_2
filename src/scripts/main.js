@@ -1,7 +1,7 @@
 AOS.init();
 
 //Definindo a data do evento
-const dataDoEvento = new Date("Dec 3, 2024 12:00:00");
+const dataDoEvento = new Date("Dec 3, 2028 12:00:00");
 
 //Instanciando o timestamp do evento
 const timeStampDoEvento = dataDoEvento.getTime();
