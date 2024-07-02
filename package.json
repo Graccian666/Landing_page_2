@@ -1,7 +1,6 @@
 {
   "name": "landing_page_2",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
